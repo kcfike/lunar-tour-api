@@ -19,8 +19,8 @@ provider:
   name: aws
   runtime: nodejs12.x
   region: us-east-1
-  stage: ${opt:stage, self:provider.stage}
-  TableDB: ${self:custom.stage}-tableDB
+  stage: dev
+  TableDB: dev-tableDB
   tableThroughputs:
     prod: 1
     default: 1
