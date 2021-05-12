@@ -14,15 +14,14 @@ custom:
     port: 4000
   bundle:
     linting: false
-
-    defaultStage: dev
+  defaultStage: dev
   defaultRegion: us-east-1
 
 provider:
   name: aws
   runtime: nodejs12.x
   region: us-east-1
-  stage: ${opt:stage, self:custom.defaultStage}
+  stage: dev
   TableDB: dev-tableDB
   tableThroughputs:
     prod: 1
