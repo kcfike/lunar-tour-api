@@ -15,6 +15,7 @@ custom:
   bundle:
     linting: false
   defaultStage: dev
+  stage: dev
   defaultRegion: us-east-1
 
 provider:
